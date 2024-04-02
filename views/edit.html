@@ -1,0 +1,13 @@
+<form action="">
+    <label for="name">Name:</label>
+    <input type="text" ng-model="inputValidate.name" />
+    <span ng-show="kiemTraDuLieu.name == true" style="color: red"
+      >Vui lòng nhập tên</span
+    >
+    <label for="price">Price:</label>
+    <input type="number" ng-model="inputValidate.price" />
+    <span ng-show="kiemTraDuLieu.price == true" style="color: red"
+      >Vui lòng nhập giá</span
+    >
+    <button ng-click="onEditForm()">Sua</button>
+  </form>

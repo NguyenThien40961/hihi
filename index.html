@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.js"></script>
+</head>
+
+<body ng-app="myController">
+    <header>
+        day la phan dau trang
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#!/product/list">List</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div ng-view></div>
+    </main>
+    <footer>
+        day la chan trang
+    </footer>
+    <script src="route/route.js"></script>
+    <script src="controller/ProductAddController.js"></script>
+    <script src="controller/ProductEditController.js"></script>
+    <script src="controller/ProductListController.js"></script>
+    <script src="controller/ProductDetailController.js"></script>
+</body>
+</html>

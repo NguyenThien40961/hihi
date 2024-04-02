@@ -1,0 +1,21 @@
+<a href="#!/product/add">Add</a>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gia</th>
+        <th>Anh</th>
+    </tr>
+    <tr ng-repeat="pr in products">
+        <td>{{pr.id}}</td>
+        <td>{{pr.name}}</td>
+        <td>{{pr.price}}</td>
+        <td>{{pr.image}}</td>
+        <td>
+            <button ng-click="onDetail(pr.id)">Chi Tiet</button>
+            <button ng-click="onDelete(pr.id)">Xoa</button>
+            <button ng-click="onEdit(pr.id)">Sua</button>
+        </td>
+    </tr>
+
+</table>
